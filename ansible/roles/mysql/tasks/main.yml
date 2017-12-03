@@ -1,0 +1,5 @@
+  - name: Install MySQL
+    yum: pkg=mysql-server state=present
+
+  - name: Start mysql, if not running
+    service: name=mysqld state=started
